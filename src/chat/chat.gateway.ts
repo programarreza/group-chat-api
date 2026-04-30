@@ -17,7 +17,12 @@ import { RedisService } from '../redis/redis.service';
 import { REDIS_CLIENT } from '../constants';
 import type { RedisClientType } from 'redis';
 
-@WebSocketGateway({ namespace: '/chat' })
+@WebSocketGateway({ 
+  path: '/chat', 
+  cors: { origin: '*' },
+  transports: ['websocket', 'polling'],
+  allowEIO3: true 
+})
 export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect, OnModuleInit, OnModuleDestroy {
   @WebSocketServer()
   server: Server;
