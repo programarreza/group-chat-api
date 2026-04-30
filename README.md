@@ -10,7 +10,6 @@ A highly scalable, real-time backend API for a group chat service.
 - npm or yarn
 - PostgreSQL (v15+)
 - Redis (v7+)
-- Redis (v7+)
 
 ## Setup Instructions
 
