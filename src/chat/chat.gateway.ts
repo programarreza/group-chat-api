@@ -18,7 +18,7 @@ import { REDIS_CLIENT } from '../constants';
 import type { RedisClientType } from 'redis';
 
 @WebSocketGateway({ 
-  path: '/chat', 
+  namespace: '/chat', 
   cors: { origin: '*' },
   transports: ['websocket', 'polling'],
   allowEIO3: true 
