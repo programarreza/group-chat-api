@@ -17,8 +17,8 @@ A highly scalable, real-time backend API for a group chat service.
 ### 1. Clone the repository and install dependencies
 
 ```bash
-git clone <repo_url>
-cd chat-api
+git clone https://github.com/programarreza/group-chat-api.git
+cd group-chat-api
 npm install
 ```
 
@@ -60,6 +60,11 @@ npm run start:prod
 ```
 
 The REST API will be accessible at `http://localhost:4000/api/v1` and the WebSocket gateway at `ws://localhost:4000/chat`.
+
+## Deployed Application
+
+The API is deployed and live at:
+**[https://group-chat-api-6biq.onrender.com](https://group-chat-api-6biq.onrender.com)**
 
 ## Architecture Details
 
