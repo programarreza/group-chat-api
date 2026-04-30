@@ -1,0 +1,2 @@
+export const DB_CONNECTION = 'DB_CONNECTION';
+export const REDIS_CLIENT = 'REDIS_CLIENT';
